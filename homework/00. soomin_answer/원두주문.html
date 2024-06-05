@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<!-- saved from url=(0105)http://192.168.0.38:5500/Html/homework/00.%20soomin_answer/02.%20html%20%ED%83%9C%EA%B7%B802/quiz-12.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        fieldset legend{
+            color: purple;
+            font-size: 18px;
+            font-weight: 600;
+            margin: 0px;
+        }
+        fieldset{ㅍ
+            width: 600px;
+            margin-top: 20px;
+        }
+        li{
+            list-style: none;
+            margin-bottom: 10px;
+        }
+        body{
+            width: 600px;
+            margin: 0 auto;
+        }
+        .button {
+            text-align: center;
+        }
+        label.title{
+            font-weight: bold;
+            width: 80px;
+            float: left;
+        }
+        ul{
+            list-style-type: none;
+        }
+
+    </style>
+    
+</head>
+<body>
+    <h1>상품 주문서</h1>
+    <form>
+        <fieldset>
+            <legend>개인 정보</legend>
+            <ul>
+                <li>
+                    <label for="name" class="title">이름</label>
+                    <input type="text" id="name" placeholder="여백없이 입력" required="">
+                </li>
+                <li>
+                    <label for="phonenumber" class="title">연락처</label>
+                    <input type="tel" id="phonenumber" placeholder="연락가능한 번호" required="">
+                </li>
+            </ul>    
+        </fieldset>
+        <fieldset>
+            <legend>배송지 정보</legend>
+            <ul>
+                <li>
+                    <label for="address" class="title">주소</label>
+                    <input type="text" id="address">
+                </li>
+                <li>
+                    <label for="phonenumber" class="title">전화번호</label>
+                    <input type="tel" id="phonenumber">
+                </li>
+                <li>
+                    <label for="memo" class="title">메  모</label>
+                    <textarea name="memo" id="memo" cols="40" rows="3"></textarea>
+                </li>   
+            </ul>   
+        </fieldset>
+        <fieldset>
+            <legend>주문 정보</legend>
+            <ul>
+                <li>
+                    <label for="">
+                        <input type="checkbox">과테말라 안타구아 (100g) <input type="text" value="0">개
+                    </label>
+                </li>
+                <li>
+                    <label for="">
+                        <input type="checkbox">인도네시아 만델링 (100g) <input type="text" value="0">개
+                    </label>
+                </li>
+                <li>
+                    <label for="">
+                        <input type="checkbox">탐라는도다(블렌딩) (100g) <input type="text" value="0">개
+                    </label>
+                </li>
+            </ul>
+
+        </fieldset>
+        <br>
+        <li class="button">
+        <input type="submit" value="주문하기">
+        <input type="reset" value="다시 작성">
+        </li>
+    </form>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
